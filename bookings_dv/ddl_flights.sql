@@ -37,7 +37,7 @@ CREATE TABLE sl_dv.s_flights_scheduled_arrival AS (
 		   CAST(CURRENT_TIMESTAMP(0) AS timestamp) AS load_date,
 		   '9999-12-31 23:59:59' :: timestamp AS load_end_date,
 		   'my_soure' AS source_load,
-		   actual_arrival
+		   scheduled_arrival
 	FROM bookings.flights
 );
 
