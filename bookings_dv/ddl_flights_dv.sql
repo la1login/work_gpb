@@ -67,3 +67,4 @@ CREATE TABLE sl_dv.s_flights_actual_arrival AS (
 
 ALTER TABLE sl_dv.s_flights_actual_arrival ADD PRIMARY KEY (flights_hash_key, load_date);
 ALTER TABLE sl_dv.s_flights_actual_arrival ADD FOREIGN KEY (flights_hash_key) REFERENCES h_flights(flights_hash_key);
+
